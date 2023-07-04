@@ -4463,7 +4463,7 @@ int enet_address_get_hostname(const ENetAddress* address, char* name, size_t nam
 =======================================================================
 */
 
-#ifndef _WIN32
+#if 0
 int enet_initialize(void) {
 	ENET_LOG_TRACE("Unix-like Environment: Initialization");
 	return 0;
@@ -4798,7 +4798,7 @@ int enet_socket_wait(ENetSocket socket, uint32_t* condition, uint64_t timeout) {
 =======================================================================
 */
 
-#ifdef _WIN32
+#if 0
 int enet_initialize(void) {
 	WORD versionRequested = MAKEWORD(2, 2);
 	WSADATA wsaData;
